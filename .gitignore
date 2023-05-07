@@ -1,3 +1,4 @@
 .env
 .DS_Store
 .htaccess
+storage/logs/laravel.log
