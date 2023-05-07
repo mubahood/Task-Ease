@@ -2,3 +2,4 @@
 .DS_Store
 .htaccess
 storage/logs/laravel.log
+public/storage/images/logo-2.png
