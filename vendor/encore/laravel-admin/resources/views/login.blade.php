@@ -110,8 +110,8 @@ $ent = Utils::ent();
                  {!! $ent->welcome_message !!}
             </div>
         </div>
-        <div class="col-md-1 fill  " style="padding: 0px; width: 4rem;">
-            <div class="fill "
+        <div class="col-md-1 fill pc-only " style="padding: 0px; width: 4rem;">
+            <div class="fill pc-only"
                 style="width: 3rem; background-image: url({{ url('assets/pattern.png') }});    
             background-size:     cover;
             background-repeat:   no-repeat;
