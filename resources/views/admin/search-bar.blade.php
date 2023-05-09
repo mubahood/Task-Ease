@@ -4,7 +4,7 @@
             @if ($u->isRole('super-admin'))
                 <input type="text" class="form-control" id="navbar-search-input" placeholder="Search for enterprises...">
             @elseif($u->isRole('admin'))
-                <input type="text" class="form-control" id="navbar-search-input" placeholder="Search for a students...">
+                <input type="text" class="form-control" id="navbar-search-input" placeholder="Search for a employees...">
             @else
                 <input type="text" class="form-control" id="navbar-search-input" placeholder="Search...">
             @endif

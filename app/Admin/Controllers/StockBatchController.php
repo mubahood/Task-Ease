@@ -224,11 +224,6 @@ class StockBatchController extends AdminController
 
         $form->image('photo', __('Stock Photo'));
 
-        $form->select('fund_requisition_id', 'Funds requisition form')
-            ->options($forms);
-
-
-
 
 
         return $form;

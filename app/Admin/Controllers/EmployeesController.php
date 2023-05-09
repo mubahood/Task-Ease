@@ -19,7 +19,7 @@ class EmployeesController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Teaching & non teaching staff';
+    protected $title = 'Employees';
 
     /**
      * Make a grid builder.

@@ -33,16 +33,16 @@ $ent = Utils::ent();
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         /* var Tawk_API = Tawk_API || {},
-                Tawk_LoadStart = new Date();
-            (function() {
-                var s1 = document.createElement("script"),
-                    s0 = document.getElementsByTagName("script")[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/6322adcd54f06e12d894cbb7/1gcvndrj2';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
-            })(); */
+                            Tawk_LoadStart = new Date();
+                        (function() {
+                            var s1 = document.createElement("script"),
+                                s0 = document.getElementsByTagName("script")[0];
+                            s1.async = true;
+                            s1.src = 'https://embed.tawk.to/6322adcd54f06e12d894cbb7/1gcvndrj2';
+                            s1.charset = 'UTF-8';
+                            s1.setAttribute('crossorigin', '*');
+                            s0.parentNode.insertBefore(s1, s0);
+                        })(); */
     </script>
     <!--End of Tawk.to Script-->
 
@@ -104,15 +104,14 @@ $ent = Utils::ent();
     <div class="row">
         <div class="col-md-6 fill pc-only " style="background-color: {{ $ent->color }}">
             <br>
-            <br>
             <img class="img-fluid center " width="25%" src="{{ url("storage/images/$ent->logo") }}" alt="">
             <div class="description">
-                <h2>{{ $ent->name }}.</h2>
-                {!! $ent->welcome_message !!}
+                 <h2>{{ $ent->name }}.</h2> 
+                 {!! $ent->welcome_message !!}
             </div>
         </div>
-        <div class="col-md-1 fill pc-only " style="padding: 0px; width: 4rem;">
-            <div class="fill pc-only"
+        <div class="col-md-1 fill  " style="padding: 0px; width: 4rem;">
+            <div class="fill "
                 style="width: 3rem; background-image: url({{ url('assets/pattern.png') }});    
             background-size:     cover;
             background-repeat:   no-repeat;
@@ -127,7 +126,7 @@ $ent = Utils::ent();
                     <a href="{{ admin_url('/') }}"><b>{{ config('admin.name') }}</b></a>
                 </div> --}}
 
-                <img class="img-fluid center mobo-only " width="30%" src="{{ url("storage/$ent->logo") }}"
+                <img class="img-fluid center " width="30%" src="{{ url("storage/$ent->logo") }}"
                     alt="">
 
                 <div class="login-logo">

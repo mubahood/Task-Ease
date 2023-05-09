@@ -12,7 +12,7 @@ Route::group([
 ], function (Router $router) {
 
     $router->resource('employees-batch-importers', EmployeesBatchImporterController::class);
-    $router->resource('employees', EmployeesController::class);
+    $router->resource('employees', header::class);
     $router->resource('books-categories', BooksCategoryController::class);
     $router->resource('book-authors', BookAuthorController::class);
     $router->resource('books', BookController::class);

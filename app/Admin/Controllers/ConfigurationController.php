@@ -32,7 +32,7 @@ class ConfigurationController extends AdminController
             'id' => Auth::user()->enterprise_id
         ]);
 
-        $grid->column('name', __('School Name'));
+        $grid->column('name', __('Company Name'));
         $grid->column('short_name', __('Short name'));
         $grid->column('logo', __('Logo'));
         $grid->column('phone_number', __('Phone number'));
@@ -53,7 +53,7 @@ class ConfigurationController extends AdminController
     {
         $show = new Show(Enterprise::findOrFail($id));
 
-        $show->field('name', __('School Name'));
+        $show->field('name', __('Company Name'));
         $show->field('short_name', __('Short name'));
         $show->field('logo', __('Logo'));
         $show->field('phone_number', __('Phone number'));
@@ -81,21 +81,20 @@ class ConfigurationController extends AdminController
         $form->disableReset();
         $form->disableViewCheck();
 
-        $form->text('name', __('School Name'))->required();
+        $form->text('name', __('Company Name'))->required();
         $form->text('short_name', __('Short name'))->required();
-        $form->image('logo', __('School badge'))->required();
-        $form->text('address', __('School Address'))->required();
-        $form->quill('details', __('School details'))->required();
+        $form->image('logo', __('Company logo'))->required();
+        $form->text('address', __('Company Address'))->required();
+        $form->quill('details', __('Company details'))->required();
         $form->text('phone_number', __('Phone number'))->required();
         $form->text('phone_number_2', __('Alternative phone number'))->required();
         $form->text('p_o_box', __('P.O.BOX'))->required();
         $form->email('email', __('Email'))->required();
-        $form->color('color', __('School Color'))->default('color')->required();
+        $form->color('color', __('Company Color'))->default('color')->required();
         $form->quill('welcome_message', __('Welcome message'));
         $form->divider();
-        $form->image('hm_signature', __('Head Teacher signature'));
-        $form->image('dos_signature', __('Head Teacher signature'));
-        $form->image('bursar_signature', __('Bursar signature')); 
+        $form->image('hm_signature', __('Manager\'s signature'));
+        $form->image('bursar_signature', __('Accountant\'s signature'));
 
         return $form;
     }

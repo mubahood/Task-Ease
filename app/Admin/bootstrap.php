@@ -58,7 +58,7 @@ Admin::navbar(function (\Encore\Admin\Widgets\Navbar $navbar) {
     ]));
     $links = [];
 
-    if ($u != null) {
+/*     if ($u != null) {
 
         if ($u->isRole('super-admin')) {
             $links = [
@@ -99,7 +99,7 @@ Admin::navbar(function (\Encore\Admin\Widgets\Navbar $navbar) {
                 'u' => $u
             ]));
         }
-    }
+    } */
 });
 
 Admin::css('/css/jquery-confirm.min.css');

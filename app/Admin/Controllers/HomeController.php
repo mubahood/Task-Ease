@@ -49,7 +49,7 @@ class HomeController extends Controller
     public function stats(Content $content)
     {
 
-
+        return $content;
 
         $u = Admin::user();
 
