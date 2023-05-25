@@ -11,6 +11,12 @@ Route::group([
     'as'            => config('admin.route.prefix') . '.',
 ], function (Router $router) {
 
+    $router->resource('quotations', QuotationController::class);
+    $router->resource('invoices', InvoiceController::class);
+    $router->resource('invoice-items', InvoiceItemController::class);
+    $router->resource('deliveries', DeliveryController::class); 
+    
+
     $router->resource('employees-batch-importers', EmployeesBatchImporterController::class);
     $router->resource('employees', header::class);
     $router->resource('books-categories', BooksCategoryController::class);

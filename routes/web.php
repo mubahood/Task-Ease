@@ -16,6 +16,25 @@ use Mockery\Matcher\Subset;
 use Faker\Factory as Faker;
 use Illuminate\Support\Facades\App;
 
+Route::get('invoice', function () {
+  $pdf = App::make('dompdf.wrapper');
+  $pdf->loadHTML(view('print/invoice'));
+  return $pdf->stream();
+});
+
+Route::get('quotation', function () {
+  $pdf = App::make('dompdf.wrapper');
+  $pdf->loadHTML(view('print/quotation'));
+  return $pdf->stream();
+});
+
+Route::get('delivery', function () {
+  $pdf = App::make('dompdf.wrapper');
+  $pdf->loadHTML(view('print/delivery'));
+  return $pdf->stream();
+});
+
+
 
 Route::match(['get', 'post'], '/print', [PrintController2::class, 'index']);
 Route::match(['get', 'post'], '/report-cards', [PrintController2::class, 'secondary_report_cards']);
